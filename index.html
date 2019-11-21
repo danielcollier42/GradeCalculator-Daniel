@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel's Grade Calculator</title>
+    <script src = "Script.js"></script>
+    <link rel =  "stylesheet" href = "Design.css">
+</head>
+<body>
+<h1 class="title">Thou shalt calculatorize thy grade!</h1>
+<h2 class="instructions">To calculatorize thy grade thou must enter thy grades and the weight of said grades.</h2>
+<h3 class="instructions">When calculatorizing thy grade, thou must only enter the numbers separated by a comma and a space (ex. "86, 74, 99, 84"). Thou must not enter the percentage symbols when inputting thine grade.</h3>
+<table class="chart1" id="GradesandWeights" border="2" align="center" width="">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+    <tr>
+        <td></td>
+        <th>Category</th>
+        <td>Current grade</td>
+        <td>Weight (in percents)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td id = "HwRow">Homework</td>
+        <td>
+            <input class="input" id="hwGrade" placeholder = "Input Grade(s)" value = "ex. 80, 90, 100" type="text" name="Grade">
+        </td>
+        <td>
+            <input class="input" id="hwWeight" placeholder = "Input Weight (in %)" value = "ex. 10" type="text" name="Weight">
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td id = "TestRow">Tests</td>
+        <td>
+            <input class="input" id="testGrade" placeholder = "Input Grade(s)" value = "ex. 80, 90, 100" type="text" name="Grade">
+        </td>
+        <td>
+            <input class="input" id="testWeight" placeholder = "Input Weight (in %)" value = "ex. 40" type="text" name="Weight">
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td id = "QuizRow">Quizzes</td>
+        <td>
+            <input class="input" id="qGrade" placeholder = "Input Grade(s)" value = "ex. 80, 90, 100" type="text" name="Grade">
+        </td>
+        <td>
+            <input class="input" id="qWeight" placeholder = "Input Weight (in %)" value = "ex. 25" type="text" name="Weight">
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td id = "CwRow">Classwork</td>
+        <td>
+            <input class="input" id="cwGrade" placeholder = "Input Grade(s)" value = "ex. 80, 90, 100" type="text" name="Grade">
+        </td>
+        <td>
+            <input class="input" id="cwWeight" placeholder = "Input Weight (in %)" value = "ex. 20" type="text" name="Weight">
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td id = "PartRow">Participation</td>
+        <td>
+            <input class="input" id="partGrade" placeholder = "Input Grade(s)" value = "ex. 80, 90, 100" type="text" name="Grade">
+        </td>
+        <td>
+            <input class="input" id="partWeight" placeholder = "Input Weight (in %)" value = "ex. 5" type="text" name="Weight">
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<div>
+    <button onClick="calculateCurrentGrade()">Calculate Thy Current Grade</button>
+</div>
+<div id = "currentGrade"></div>
+<h2 class="instructions">To calculatorize thy final grade necessary, thou must enter the weight of thy mighty final and the grade that thou wishest to receive.</h2>
+<table class="chart2" id="finalTable" border="3" align="center" width="25%">
+    <tr>
+        <th>Desired grade in the class</th>
+        <td>
+        <input class="finalinput" id="gradeDesired" placeholder = "Desired Grade (in %)" value = "ex. 95" type="text" name="Grade">
+        </td>
+    </tr>
+    <tr>
+        <th>Final weight</th>
+        <td>
+        <input class="finalinput" id="finalWeight" placeholder = "Final Weight (in%)" value = "ex. 60" type="text" name="Weight">
+        </td>
+    </tr>
+</table>
+<div class="pressyThings">
+    <button onClick="calculateFinalGrade()">Calculate Necessary Final Grade</button>
+</div>
+<div id = "finalGradeNeeded"></div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+h1 {
+    text-align: center;
+    color: navy;
+    font-family: fantasy;
+}
+
+h2{
+    text-align: center;
+    color: cornflowerblue;
+    font-family: fantasy;
+}
+
+h3{
+    text-align: center;
+    color: deepskyblue;
+    font-family: fantasy;
+}
+
+body{
+    text-align: center;
+    background-color: cornsilk;
+}
+
+button{
+    background-color: indigo;
+    color: antiquewhite;
+}
+
+.chart2{
+    border-color: indigo;
+    position: relative;
+    font-family: fantasy;
+}
+
+.chart1{
+    background-color: transparent;
+    position: relative;
+    font-family: fantasy;
+}
+
+.input{
+    background-color: transparent;
+    font-family: fantasy;
+    text-align: center;
+    font-weight:bolder;
+    font-size: inherit;
+    font-size: 90%;
+}
+
+.finalinput{
+    background-color: transparent;
+    font-family: fantasy;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 90%;
+}
+
+colors{
+    color: green;
+}
+
+instructions {
+    /*!* style all elements in the <body> *!*/
+    /*body {*/
+    /*font-family: sans-serif;*/
+    /*vertical-align: top;*/
+    /*}*/
+
+    /*!* style all the buttons in a page *!*/
+    /*button {*/
+    /*width: 30px;*/
+    /*color: black;*/
+    /*}*/
+
+    /*!* style the element with the id “myId” *!*/
+    /*#output {*/
+    /*color: yellow;*/
+    /*}*/
+
+    /*!*style all elements with the class “fontLarge” *!*/
+    /*.fontLarge{*/
+    /*font-size: 14px;*/
+    /*}*/
+
+    /*!* style all p elements with the class “center” *!*/
+    /*p.center {*/
+    /*text-align: center;*/
+    /*color: red;*/
+    /*}*/
+
+    /*!* style all h1, h2 and p elements *!*/
+    /*h1, h2, p {*/
+    /*text-align: right;*/
+    /*text-weight: bold;*/
+    /*}*/
+}
+
+
+
+
